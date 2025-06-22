@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortaFolio </title>
+    <title>Portfolio | Víctor Resendiz</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -38,7 +38,7 @@
             background: #000;
             border-radius: 50%;
             animation: snowFall linear infinite;
-            opacity: 0.8;
+            opacity: 0.2;
         }
 
         @keyframes snowFall {
@@ -47,10 +47,10 @@
                 opacity: 0;
             }
             10% {
-                opacity: 1;
+                opacity: 0.2;
             }
             90% {
-                opacity: 1;
+                opacity: 0.2;
             }
             100% {
                 transform: translateY(100vh) translateX(20vw) rotate(360deg);
@@ -68,7 +68,7 @@
             top: 0;
             z-index: 1000;
             box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-right: 1px solid #e0e0e0;
             height: 100vh;
             width: 80px;
             display: flex;
@@ -84,17 +84,6 @@
             justify-content: center;
         }
 
-        .logo {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #333;
-            letter-spacing: 1px;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            margin-bottom: 2rem;
-        }
-
         .nav-links {
             display: flex;
             flex-direction: column;
@@ -104,7 +93,7 @@
         }
 
         .nav-links a {
-            color: #555;
+            color: #666;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -114,7 +103,7 @@
         }
 
         .nav-links a:hover {
-            color: #2c3e50;
+            color: #0066cc;
         }
 
         .nav-links a::after {
@@ -124,7 +113,7 @@
             height: 0;
             left: -5px;
             bottom: 0;
-            background: #2c3e50;
+            background: #0066cc;
             transition: height 0.3s ease;
         }
 
@@ -166,28 +155,28 @@
             height: 220px;
             border-radius: 50%;
             margin: 0 auto 2rem;
-            border: 3px solid #2c3e50;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 3px solid #0066cc;
+            box-shadow: 0 0 20px rgba(0, 102, 204, 0.3);
             transition: all 0.3s ease;
             object-fit: cover;
         }
 
         .profile-img:hover {
             transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 30px rgba(0, 102, 204, 0.5);
         }
 
         .hero h1 {
             font-size: 2.8rem;
             margin-bottom: 1rem;
-            color: #2c3e50;
+            color: #333;
             font-weight: 700;
             line-height: 1.2;
         }
 
         .hero h2 {
             font-size: 1.5rem;
-            color: #7f8c8d;
+            color: #666;
             margin-bottom: 2rem;
             font-weight: 500;
         }
@@ -202,7 +191,7 @@
 
         .cta-button {
             display: inline-block;
-            background: #2c3e50;
+            background: #0066cc;
             color: white;
             padding: 0.8rem 2rem;
             border-radius: 30px;
@@ -210,22 +199,23 @@
             font-weight: 500;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #004d99;
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-            background: #34495e;
+            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
+            background: #0052a3;
         }
 
         .cta-button.secondary {
             background: transparent;
-            color: #2c3e50;
-            border: 2px solid #2c3e50;
+            color: #0066cc;
+            border: 2px solid #0066cc;
         }
 
         .cta-button.secondary:hover {
-            background: rgba(44, 62, 80, 0.05);
+            background: rgba(0, 102, 204, 0.1);
         }
 
         .social-links {
@@ -240,22 +230,22 @@
             display: inline-flex;
             width: 60px;
             height: 60px;
-            background: white;
+            background: rgba(240, 240, 240, 0.9);
             border-radius: 50%;
             align-items: center;
             justify-content: center;
-            color: #2c3e50;
+            color: #333;
             text-decoration: none;
             transition: all 0.3s ease;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             font-size: 1.5rem;
         }
 
         .social-link:hover {
             transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            color: #3498db;
+            box-shadow: 0 10px 25px rgba(0, 102, 204, 0.2);
+            color: #0066cc;
         }
 
         /* Sections profesionales */
@@ -263,17 +253,18 @@
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto 2rem;
-            background-color: white;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             margin-left: 80px;
+            border: 1px solid #e0e0e0;
         }
 
         .section-title {
             font-size: 2.2rem;
             text-align: center;
             margin-bottom: 3.5rem;
-            color: #2c3e50;
+            color: #333;
             position: relative;
             font-weight: 700;
         }
@@ -283,7 +274,7 @@
             position: absolute;
             width: 80px;
             height: 3px;
-            background: #3498db;
+            background: #0066cc;
             bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
@@ -291,7 +282,7 @@
 
         .section-subtitle {
             text-align: center;
-            color: #7f8c8d;
+            color: #666;
             max-width: 700px;
             margin: 0 auto 4rem;
             font-size: 1.1rem;
@@ -304,7 +295,7 @@
             text-align: center;
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #555;
+            color: #666;
             margin-bottom: 3rem;
         }
 
@@ -322,7 +313,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(to bottom, transparent, #3498db, transparent);
+            background: linear-gradient(to bottom, transparent, #0066cc, transparent);
             transform: translateX(-50%);
         }
 
@@ -359,19 +350,20 @@
         }
 
         .timeline-content {
-            background: white;
+            background: rgba(240, 240, 240, 0.95);
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
             width: 45%;
             position: relative;
             transition: all 0.3s ease;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #0066cc;
+            border: 1px solid #e0e0e0;
         }
 
         .timeline-content:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 102, 204, 0.1);
         }
 
         .timeline-item:nth-child(odd) .timeline-content {
@@ -389,12 +381,12 @@
 
         .timeline-item:nth-child(odd) .timeline-content::before {
             right: 100%;
-            border-color: transparent white transparent transparent;
+            border-color: transparent rgba(240, 240, 240, 0.95) transparent transparent;
         }
 
         .timeline-item:nth-child(even) .timeline-content::before {
             left: 100%;
-            border-color: transparent transparent transparent white;
+            border-color: transparent transparent transparent rgba(240, 240, 240, 0.95);
         }
 
         .timeline-date {
@@ -402,25 +394,25 @@
             left: 50%;
             top: 20px;
             transform: translateX(-50%);
-            background: #3498db;
+            background: #0066cc;
             color: white;
             padding: 0.5rem 1.5rem;
             border-radius: 30px;
             font-weight: bold;
             white-space: nowrap;
             font-size: 0.85rem;
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 102, 204, 0.2);
         }
 
         .timeline-content h3 {
-            color: #2c3e50;
+            color: #333;
             margin-bottom: 0.5rem;
             font-size: 1.3rem;
             font-weight: 600;
         }
 
         .timeline-content h4 {
-            color: #3498db;
+            color: #0066cc;
             margin-bottom: 1rem;
             font-size: 1rem;
             font-weight: 500;
@@ -435,7 +427,7 @@
         }
 
         .timeline-content p {
-            color: #555;
+            color: #666;
             line-height: 1.7;
             font-size: 0.95rem;
         }
@@ -449,20 +441,21 @@
         }
 
         .skill-category {
-            background: white;
+            background: rgba(240, 240, 240, 0.95);
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
         }
 
         .skill-category:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 102, 204, 0.1);
         }
 
         .skill-category h3 {
-            color: #2c3e50;
+            color: #333;
             margin-bottom: 1.5rem;
             font-size: 1.3rem;
             display: flex;
@@ -472,7 +465,7 @@
 
         .skill-category h3 i {
             margin-right: 10px;
-            color: #3498db;
+            color: #0066cc;
         }
 
         .skill-item {
@@ -487,26 +480,95 @@
 
         .skill-name {
             font-weight: 500;
-            color: #555;
+            color: #666;
         }
 
         .skill-percent {
-            color: #7f8c8d;
+            color: #888;
             font-size: 0.9rem;
         }
 
         .skill-bar {
             height: 8px;
-            background: #ecf0f1;
+            background: #e0e0e0;
             border-radius: 4px;
             overflow: hidden;
         }
 
         .skill-progress {
             height: 100%;
-            background: linear-gradient(90deg, #3498db, #2980b9);
+            background: linear-gradient(90deg, #0066cc, #004d99);
             border-radius: 4px;
             transition: width 1s ease;
+        }
+
+        /* Sección de Proyectos */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: rgba(240, 240, 240, 0.95);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 102, 204, 0.1);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .project-info p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Sección de Clientes */
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            align-items: center;
+        }
+
+        .client-logo {
+            max-width: 100%;
+            height: auto;
+            max-height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .client-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
         }
 
         /* Certificaciones mejoradas */
@@ -518,19 +580,20 @@
         }
 
         .cert-card {
-            background: white;
+            background: rgba(240, 240, 240, 0.95);
             padding: 2rem;
             border-radius: 8px;
             text-align: center;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             animation: fadeInUp 1s ease;
-            border-top: 3px solid #3498db;
+            border-top: 3px solid #0066cc;
+            border: 1px solid #e0e0e0;
         }
 
         .cert-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 102, 204, 0.1);
         }
 
         .cert-img {
@@ -538,39 +601,39 @@
             height: 80px;
             margin: 0 auto 1.5rem;
             border-radius: 50%;
-            border: 2px solid #3498db;
+            border: 2px solid #0066cc;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.8rem;
-            background: rgba(52, 152, 219, 0.1);
-            color: #3498db;
+            background: rgba(0, 102, 204, 0.1);
+            color: #0066cc;
         }
 
         .cert-card h3 {
-            color: #2c3e50;
+            color: #333;
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
             font-weight: 600;
         }
 
         .cert-card p {
-            color: #555;
+            color: #666;
             margin-bottom: 0.5rem;
             font-size: 0.95rem;
             line-height: 1.6;
         }
 
         .cert-card p strong {
-            color: #3498db;
+            color: #0066cc;
             font-size: 0.85rem;
         }
 
         .verify-btn {
             background: transparent;
-            color: #3498db;
+            color: #0066cc;
             padding: 0.5rem 1.5rem;
-            border: 1px solid #3498db;
+            border: 1px solid #0066cc;
             border-radius: 4px;
             cursor: pointer;
             text-decoration: none;
@@ -582,32 +645,24 @@
         }
 
         .verify-btn:hover {
-            background: rgba(52, 152, 219, 0.1);
+            background: rgba(0, 102, 204, 0.1);
             transform: translateY(-2px);
         }
 
         /* Footer */
         footer {
-            background: #2c3e50;
-            color: white;
+            background: #f5f5f5;
+            color: #333;
             padding: 3rem 0;
             text-align: center;
             margin-left: 80px;
+            border-top: 1px solid #e0e0e0;
         }
 
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
-        }
-
-        .footer-logo {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: white;
-            margin-bottom: 1.5rem;
-            display: inline-block;
         }
 
         .footer-social {
@@ -618,7 +673,7 @@
         }
 
         .footer-social a {
-            color: white;
+            color: #333;
             font-size: 1.5rem;
             transition: all 0.3s ease;
             width: 50px;
@@ -627,23 +682,23 @@
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.05);
         }
 
         .footer-social a:hover {
-            color: #3498db;
+            background: rgba(0, 102, 204, 0.2);
             transform: translateY(-3px);
-            background: rgba(255, 255, 255, 0.2);
+            color: #0066cc;
         }
 
         .copyright {
-            color: #bdc3c7;
+            color: #666;
             font-size: 0.9rem;
         }
 
         /* Responsive mejorado */
         @media (max-width: 992px) {
-            .skills-container {
+            .skills-container, .projects-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -659,13 +714,7 @@
             nav {
                 width: 100%;
                 flex-direction: row;
-                justify-content: space-between;
-            }
-            
-            .logo {
-                writing-mode: horizontal-tb;
-                transform: none;
-                margin-bottom: 0;
+                justify-content: center;
             }
             
             .nav-links {
@@ -705,7 +754,7 @@
             
             .timeline-content::before {
                 left: -10px !important;
-                border-color: transparent white transparent transparent !important;
+                border-color: transparent rgba(240, 240, 240, 0.95) transparent transparent !important;
             }
             
             .timeline-date {
@@ -730,10 +779,6 @@
             
             .hero h1 {
                 font-size: 1.8rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
             }
             
             .section {
@@ -780,12 +825,13 @@
 
     <header>
         <nav>
-            <div class="logo">VR</div>
             <ul class="nav-links">
                 <li><a href="#inicio" title="Inicio"><i class="fas fa-home"></i></a></li>
                 <li><a href="#sobre-mi" title="Sobre mí"><i class="fas fa-user"></i></a></li>
                 <li><a href="#experiencia" title="Experiencia"><i class="fas fa-briefcase"></i></a></li>
                 <li><a href="#habilidades" title="Habilidades"><i class="fas fa-code"></i></a></li>
+                <li><a href="#proyectos" title="Proyectos"><i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#clientes" title="Clientes"><i class="fas fa-handshake"></i></a></li>
                 <li><a href="#certificaciones" title="Certificaciones"><i class="fas fa-certificate"></i></a></li>
             </ul>
         </nav>
@@ -793,7 +839,7 @@
 
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <img src="tu-foto-de-perfil.jpg" alt="Foto de Víctor Resendiz" class="profile-img">
+            <img src="v.png" alt="Foto de Víctor Resendiz" class="profile-img">
             <h1>Víctor Eduardo Resendiz Villegas</h1>
             <h2>Especialista en Implementación y Administración de Ciberseguridad SOC - Senior</h2>
             
@@ -804,16 +850,16 @@
             
             <div class="social-links">
                 <a href="https://wa.me/tunumerodetelefono" class="social-link" target="_blank" title="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
                 </a>
                 <a href="https://linkedin.com/in/tu-perfil" class="social-link" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-linkedin-in" style="color: #0077B5;"></i>
                 </a>
                 <a href="https://github.com/tu-usuario" class="social-link" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github" style="color: #333;"></i>
                 </a>
                 <a href="mailto:tu-email@ejemplo.com" class="social-link" title="Email">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope" style="color: #D44638;"></i>
                 </a>
             </div>
         </div>
@@ -863,58 +909,80 @@
 
     <section id="habilidades" class="section">
         <h2 class="section-title">Habilidades Técnicas</h2>
-        <p class="section-subtitle">Competencias en seguridad y tecnologías relacionadas</p>
+        <p class="section-subtitle">Mis competencias en el área de ciberseguridad</p>
         
         <div class="skills-container">
             <div class="skill-category fade-in">
-                <h3><i class="fas fa-shield-alt"></i> Seguridad SOC</h3>
+                <h3><i class="fas fa-shield-alt"></i> Seguridad Ofensiva</h3>
                 <div class="skill-item">
                     <div class="skill-info">
-                        <span class="skill-name">Monitoreo SIEM</span>
-                        <span class="skill-percent">95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-percent="95%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Respuesta a Incidentes</span>
+                        <span class="skill-name">Pentesting</span>
                         <span class="skill-percent">90%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-percent="90%"></div>
+                        <div class="skill-progress" data-percent="90%" style="width: 90%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-info">
-                        <span class="skill-name">Análisis de Logs</span>
-                        <span class="skill-percent">88%</span>
+                        <span class="skill-name">Análisis de Vulnerabilidades</span>
+                        <span class="skill-percent">85%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-percent="88%"></div>
+                        <div class="skill-progress" data-percent="85%" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Red Team</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percent="80%" style="width: 80%;"></div>
                     </div>
                 </div>
             </div>
             
             <div class="skill-category fade-in">
-                <h3><i class="fas fa-tools"></i> Herramientas</h3>
+                <h3><i class="fas fa-lock"></i> Seguridad Defensiva</h3>
                 <div class="skill-item">
                     <div class="skill-info">
-                        <span class="skill-name">Splunk/ELK</span>
-                        <span class="skill-percent">90%</span>
+                        <span class="skill-name">SIEM</span>
+                        <span class="skill-percent">95%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-percent="90%"></div>
+                        <div class="skill-progress" data-percent="95%" style="width: 95%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-info">
-                        <span class="skill-name">Firewalls</span>
-                        <span class="skill-percent">85%</span>
+                        <span class="skill-name">Blue Team</span>
+                        <span class="skill-percent">88%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-percent="85%"></div>
+                        <div class="skill-progress" data-percent="88%" style="width: 88%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Respuesta a Incidentes</span>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percent="92%" style="width: 92%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category fade-in">
+                <h3><i class="fas fa-network-wired"></i> Tecnologías</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Firewalls</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-percent="90%" style="width: 90%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
@@ -923,41 +991,61 @@
                         <span class="skill-percent">87%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-percent="87%"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-category fade-in">
-                <h3><i class="fas fa-code"></i> Tecnologías</h3>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Python</span>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-percent="80%"></div>
+                        <div class="skill-progress" data-percent="87%" style="width: 87%;"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-info">
-                        <span class="skill-name">Bash Scripting</span>
+                        <span class="skill-name">Cloud Security</span>
                         <span class="skill-percent">75%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-percent="75%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Docker</span>
-                        <span class="skill-percent">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-percent="70%"></div>
+                        <div class="skill-progress" data-percent="75%" style="width: 75%;"></div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">Algunos de mis trabajos más relevantes</p>
+        
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="project-img">
+                <div class="project-info">
+                    <h3>Implementación de SOC</h3>
+                    <p>Diseño e implementación de un Security Operations Center para empresa financiera, incluyendo SIEM y herramientas de monitoreo.</p>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <img src="proyecto2.jpg" alt="Proyecto 2" class="project-img">
+                <div class="project-info">
+                    <h3>Auditoría de Seguridad</h3>
+                    <p>Evaluación completa de seguridad para infraestructura crítica, identificando y corrigiendo vulnerabilidades.</p>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <img src="proyecto3.jpg" alt="Proyecto 3" class="project-img">
+                <div class="project-info">
+                    <h3>Plan de Continuidad</h3>
+                    <p>Desarrollo de plan de continuidad de negocios y recuperación ante desastres para empresa de telecomunicaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes" class="section">
+        <h2 class="section-title">Clientes</h2>
+        <p class="section-subtitle">Empresas que han confiado en mis servicios</p>
+        
+        <div class="clients-grid">
+            <img src="cliente1.png" alt="Cliente 1" class="client-logo fade-in">
+            <img src="cliente2.png" alt="Cliente 2" class="client-logo fade-in">
+            <img src="cliente3.png" alt="Cliente 3" class="client-logo fade-in">
+            <img src="cliente4.png" alt="Cliente 4" class="client-logo fade-in">
+            <img src="cliente5.png" alt="Cliente 5" class="client-logo fade-in">
         </div>
     </section>
 
@@ -995,19 +1083,18 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">Víctor Resendiz</div>
             <div class="footer-social">
-                <a href="https://wa.me/tunumerodetelefono" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://linkedin.com/in/tu-perfil" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/tu-usuario" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:tu-email@ejemplo.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/tunumerodetelefono" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp" style="color: #25D366;"></i></a>
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in" style="color: #0077B5;"></i></a>
+                <a href="https://github.com/tu-usuario" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #333;"></i></a>
+                <a href="mailto:tu-email@ejemplo.com" title="Email"><i class="fas fa-envelope" style="color: #D44638;"></i></a>
             </div>
             <p class="copyright">© 2023 Víctor Eduardo Resendiz Villegas. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script>
-        // Efecto de nieve negra
+        // Efecto de nieve negra (activado por defecto)
         function createSnow() {
             const snowContainer = document.getElementById('snow-container');
             const snowflakeCount = 50;
@@ -1065,7 +1152,9 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         if (entry.target.classList.contains('skills-container') || 
-                            entry.target.classList.contains('certifications-grid')) {
+                            entry.target.classList.contains('certifications-grid') ||
+                            entry.target.classList.contains('projects-grid') ||
+                            entry.target.classList.contains('clients-grid')) {
                             animateSkills();
                         }
                         entry.target.classList.add('visible');
@@ -1097,7 +1186,7 @@
         
         // Inicialización
         window.addEventListener('DOMContentLoaded', () => {
-            createSnow();
+            createSnow(); // Activar nieve automáticamente
             setupIntersectionObserver();
         });
         
