@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Especialista en Ciberseguridad</title>
+    <title>Portfolio - Especialista en Seguridad Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,32 +13,33 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
             color: #333;
             overflow-x: hidden;
+            background-color: #0a192f;
         }
 
-        /* Animación de fondo en movimiento */
-        .animated-bg {
+        /* Fondo animado profesional */
+        .dynamic-bg {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, #f0f8ff, #e6f3ff, #ffffff, #f5f5f5);
+            background: linear-gradient(135deg, #0a192f 0%, #172a45 50%, #1a3a6a 100%);
             background-size: 400% 400%;
-            animation: gradientMove 15s ease infinite;
-            z-index: -1;
+            animation: gradientFlow 15s ease infinite;
+            z-index: -2;
         }
 
-        @keyframes gradientMove {
+        @keyframes gradientFlow {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
-        /* Partículas flotantes */
+        /* Efecto de partículas mejorado */
         .particles {
             position: fixed;
             top: 0;
@@ -50,11 +52,12 @@
 
         .particle {
             position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(0, 123, 255, 0.3);
+            width: 2px;
+            height: 2px;
+            background: rgba(100, 200, 255, 0.5);
             border-radius: 50%;
             animation: float 20s infinite linear;
+            box-shadow: 0 0 10px 2px rgba(100, 200, 255, 0.3);
         }
 
         @keyframes float {
@@ -74,22 +77,17 @@
             }
         }
 
-        /* Header */
+        /* Header moderno */
         header {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(10, 25, 47, 0.9);
             backdrop-filter: blur(10px);
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-            animation: slideDown 1s ease;
-        }
-
-        @keyframes slideDown {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(100, 200, 255, 0.1);
         }
 
         nav {
@@ -102,44 +100,41 @@
         }
 
         .logo {
+            font-family: 'Roboto Mono', monospace;
             font-size: 1.5rem;
-            font-weight: bold;
-            color: #007bff;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            font-weight: 500;
+            color: #64ffda;
+            letter-spacing: 1px;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links a {
-            color: #333;
+            color: #ccd6f6;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
             position: relative;
+            font-size: 0.95rem;
+            font-family: 'Roboto Mono', monospace;
         }
 
         .nav-links a:hover {
-            color: #007bff;
-            transform: translateY(-2px);
+            color: #64ffda;
         }
 
         .nav-links a::after {
             content: '';
             position: absolute;
             width: 0;
-            height: 2px;
+            height: 1px;
             bottom: -5px;
             left: 0;
-            background: #007bff;
+            background: #64ffda;
             transition: width 0.3s ease;
         }
 
@@ -147,7 +142,7 @@
             width: 100%;
         }
 
-        /* Hero Section */
+        /* Hero Section mejorada */
         .hero {
             height: 100vh;
             display: flex;
@@ -156,6 +151,7 @@
             text-align: center;
             padding: 0 2rem;
             position: relative;
+            color: #e6f1ff;
         }
 
         .hero-content {
@@ -179,107 +175,116 @@
             height: 200px;
             border-radius: 50%;
             margin: 0 auto 2rem;
-            border: 5px solid #007bff;
-            box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
-            animation: profileFloat 6s ease-in-out infinite;
-            transition: transform 0.3s ease;
+            border: 3px solid #64ffda;
+            box-shadow: 0 0 30px rgba(100, 255, 218, 0.2);
+            transition: all 0.3s ease;
+            object-fit: cover;
         }
 
         .profile-img:hover {
-            transform: scale(1.1);
-        }
-
-        @keyframes profileFloat {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(100, 255, 218, 0.4);
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #333;
-            animation: typewriter 3s steps(30) 1s both;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 3px solid #007bff;
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: #e6f1ff;
+            font-weight: 700;
+            line-height: 1.2;
         }
 
-        @keyframes typewriter {
-            from { width: 0; }
-            to { width: 100%; }
+        .hero h2 {
+            font-size: 1.5rem;
+            color: #8892b0;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            font-family: 'Roboto Mono', monospace;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: #8892b0;
+            margin-bottom: 2.5rem;
             animation: fadeInUp 1s ease 2s both;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
+            gap: 1.5rem;
+            margin-top: 3rem;
             animation: fadeInUp 1s ease 2.5s both;
         }
 
         .social-link {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            background: #007bff;
+            display: inline-flex;
+            width: 50px;
+            height: 50px;
+            background: rgba(100, 255, 218, 0.1);
             border-radius: 50%;
-            display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #64ffda;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+            border: 1px solid rgba(100, 255, 218, 0.2);
         }
 
         .social-link:hover {
-            transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 10px 25px rgba(0, 123, 255, 0.5);
+            transform: translateY(-5px);
+            background: rgba(100, 255, 218, 0.2);
+            box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
         }
 
         .social-link svg {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
         }
 
-        /* Sections */
+        /* Sections mejoradas */
         .section {
-            padding: 5rem 2rem;
+            padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            background-color: rgba(10, 25, 47, 0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(100, 200, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .section h2 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             text-align: center;
-            margin-bottom: 3rem;
-            color: #333;
+            margin-bottom: 3.5rem;
+            color: #e6f1ff;
             position: relative;
-            animation: fadeInUp 1s ease;
+            font-weight: 700;
+            font-family: 'Roboto Mono', monospace;
         }
 
         .section h2::after {
             content: '';
             position: absolute;
-            width: 80px;
-            height: 3px;
-            background: #007bff;
-            bottom: -10px;
+            width: 100px;
+            height: 2px;
+            background: #64ffda;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
         }
 
-        /* Experience & Education */
+        /* Timeline mejorado */
         .timeline {
             position: relative;
-            margin: 2rem 0;
+            margin: 3rem 0;
+            padding: 0 1rem;
         }
 
         .timeline::before {
@@ -288,13 +293,13 @@
             left: 50%;
             top: 0;
             bottom: 0;
-            width: 2px;
-            background: #007bff;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, #64ffda, transparent);
             transform: translateX(-50%);
         }
 
         .timeline-item {
-            margin: 2rem 0;
+            margin: 3rem 0;
             position: relative;
             animation: slideInLeft 1s ease;
         }
@@ -326,18 +331,21 @@
         }
 
         .timeline-content {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(23, 42, 69, 0.7);
             backdrop-filter: blur(10px);
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
             width: 45%;
             position: relative;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(100, 255, 218, 0.1);
         }
 
         .timeline-content:hover {
             transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            border-color: rgba(100, 255, 218, 0.3);
         }
 
         .timeline-item:nth-child(odd) .timeline-content {
@@ -355,12 +363,12 @@
 
         .timeline-item:nth-child(odd) .timeline-content::before {
             right: 100%;
-            border-color: transparent rgba(255, 255, 255, 0.9) transparent transparent;
+            border-color: transparent rgba(23, 42, 69, 0.7) transparent transparent;
         }
 
         .timeline-item:nth-child(even) .timeline-content::before {
             left: 100%;
-            border-color: transparent transparent transparent rgba(255, 255, 255, 0.9);
+            border-color: transparent transparent transparent rgba(23, 42, 69, 0.7);
         }
 
         .timeline-date {
@@ -368,78 +376,128 @@
             left: 50%;
             top: 20px;
             transform: translateX(-50%);
-            background: #007bff;
-            color: white;
-            padding: 0.5rem 1rem;
+            background: #64ffda;
+            color: #0a192f;
+            padding: 0.5rem 1.5rem;
             border-radius: 20px;
             font-weight: bold;
             white-space: nowrap;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.85rem;
+            box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
         }
 
-        /* Certifications */
+        .timeline-content h3 {
+            color: #e6f1ff;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .timeline-content h4 {
+            color: #64ffda;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .timeline-content p {
+            color: #8892b0;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Certificaciones mejoradas */
         .certifications-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
 
         .cert-card {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(23, 42, 69, 0.7);
             backdrop-filter: blur(10px);
             padding: 2rem;
-            border-radius: 15px;
+            border-radius: 8px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
             animation: fadeInUp 1s ease;
+            border: 1px solid rgba(100, 255, 218, 0.1);
         }
 
         .cert-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0, 123, 255, 0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            border-color: rgba(100, 255, 218, 0.3);
         }
 
         .cert-img {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 1rem;
-            border-radius: 10px;
-            border: 3px solid #007bff;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            border: 2px solid #64ffda;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            background: linear-gradient(45deg, #007bff, #0056b3);
-            color: white;
+            font-size: 1.8rem;
+            background: rgba(100, 255, 218, 0.1);
+            color: #64ffda;
+            box-shadow: 0 0 20px rgba(100, 255, 218, 0.1);
+        }
+
+        .cert-card h3 {
+            color: #e6f1ff;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .cert-card p {
+            color: #8892b0;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .cert-card p strong {
+            color: #64ffda;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.85rem;
         }
 
         .verify-btn {
-            background: #28a745;
-            color: white;
+            background: transparent;
+            color: #64ffda;
             padding: 0.5rem 1.5rem;
-            border: none;
-            border-radius: 25px;
+            border: 1px solid #64ffda;
+            border-radius: 4px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             transition: all 0.3s ease;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.85rem;
         }
 
         .verify-btn:hover {
-            background: #218838;
-            transform: scale(1.05);
+            background: rgba(100, 255, 218, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(100, 255, 218, 0.1);
         }
 
-        /* Responsive */
+        /* Responsive mejorado */
         @media (max-width: 768px) {
             .nav-links {
-                display: none;
+                gap: 1.5rem;
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.2rem;
             }
             
             .timeline::before {
@@ -453,12 +511,35 @@
             
             .timeline-content::before {
                 left: -10px !important;
-                border-color: transparent rgba(255, 255, 255, 0.9) transparent transparent !important;
+                border-color: transparent rgba(23, 42, 69, 0.7) transparent transparent !important;
             }
             
             .timeline-date {
                 left: 20px;
                 transform: none;
+                top: -15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section {
+                padding: 4rem 1.5rem;
+            }
+            
+            .certifications-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -476,12 +557,12 @@
     </style>
 </head>
 <body>
-    <div class="animated-bg"></div>
+    <div class="dynamic-bg"></div>
     <div class="particles"></div>
 
     <header>
         <nav>
-            <div class="logo">🛡️ CyberSec Pro</div>
+            <div class="logo">Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
@@ -493,9 +574,10 @@
 
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <img src="https://via.placeholder.com/200x200/007bff/ffffff?text=FOTO" alt="Foto de perfil" class="profile-img">
-            <h1>Especialista en Ciberseguridad</h1>
-            <p>Protegiendo activos digitales y fortaleciendo la seguridad informática con más de X años de experiencia</p>
+            <img src="https://via.placeholder.com/200x200/64ffda/0a192f?text=FOTO" alt="Foto de perfil" class="profile-img">
+            <h1>Especialista en Seguridad Digital</h1>
+            <h2>Protegiendo activos digitales con soluciones innovadoras</h2>
+            <p>Profesional con más de X años de experiencia en ciberseguridad, análisis de vulnerabilidades y gestión de riesgos. Especializado en proteger infraestructuras críticas y datos sensibles contra amenazas avanzadas.</p>
             
             <div class="social-links">
                 <a href="https://wa.me/1234567890" class="social-link" target="_blank" title="WhatsApp">
@@ -623,43 +705,70 @@
     </section>
 
     <script>
-        // Crear partículas flotantes
+        // Crear partículas flotantes mejoradas
         function createParticles() {
             const particlesContainer = document.querySelector('.particles');
-            for (let i = 0; i < 50; i++) {
+            const particleCount = window.innerWidth < 768 ? 30 : 60;
+            
+            for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.classList.add('particle');
+                
+                // Posición aleatoria
                 particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                
+                // Tamaño aleatorio entre 1px y 3px
+                const size = Math.random() * 2 + 1;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                // Opacidad aleatoria
+                particle.style.opacity = Math.random() * 0.5 + 0.1;
+                
+                // Animación con duración y delay aleatorios
                 particle.style.animationDelay = Math.random() * 20 + 's';
-                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
+                
                 particlesContainer.appendChild(particle);
             }
         }
 
-        // Scroll suave
+        // Scroll suave mejorado
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    // Desplazamiento suave
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
                     });
+                    
+                    // Actualizar URL sin recargar
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        window.location.hash = targetId;
+                    }
                 }
             });
         });
 
-        // Animaciones al hacer scroll
+        // Animaciones al hacer scroll con Intersection Observer
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px 0px -100px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
@@ -668,34 +777,37 @@
             observer.observe(el);
         });
 
-        // Efecto de escritura en el header
-        const header = document.querySelector('.hero h1');
-        const text = header.textContent;
-        header.textContent = '';
-        
-        let i = 0;
-        function typeWriter() {
-            if (i < text.length) {
-                header.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            }
-        }
-
-        // Inicializar efectos
-        window.addEventListener('load', () => {
-            createParticles();
-            setTimeout(typeWriter, 1000);
+        // Efecto de movimiento en el fondo con mouse
+        document.addEventListener('mousemove', (e) => {
+            const bg = document.querySelector('.dynamic-bg');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            bg.style.backgroundPosition = `${x * 100}% ${y * 100}%`;
         });
 
-        // Efecto parallax suave
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const particles = document.querySelectorAll('.particle');
-            particles.forEach((particle, index) => {
-                const speed = (index % 3 + 1) * 0.5;
-                particle.style.transform = `translateY(${scrolled * speed}px)`;
+        // Inicializar efectos al cargar la página
+        window.addEventListener('load', () => {
+            createParticles();
+            
+            // Asegurar que las secciones visibles al cargar tengan animación
+            document.querySelectorAll('.fade-in').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    el.classList.add('visible');
+                }
             });
+        });
+
+        // Optimización para resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                const particles = document.querySelector('.particles');
+                particles.innerHTML = '';
+                createParticles();
+            }, 200);
         });
     </script>
 </body>
